@@ -25,6 +25,15 @@ namespace Lab_21_СамРабота_Многопоточность_класс_TH
             gardener1.Join();
             gardener2.Join();
 
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.Write(garden[i, j]);
+                }
+                Console.WriteLine();
+            }
+
             Console.WriteLine("Садовые работы завершены.");
             Console.ReadKey();
         }
